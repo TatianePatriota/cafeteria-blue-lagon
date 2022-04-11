@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 15vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+}
+
+.card-1 {
+    text-align: center;
+    width: 20vw;
+    height: 50vh;
+    border-radius: 10px;
+    background-color: rgb(4, 85, 110);
+    color: white;
+ } 
+
+.panquecas, .croissant, .crepioca {
+    width: 18vw;
+    height: 30vh;
+    margin-top: 5px;  
+    border-radius: 5px; 
+    margin-bottom: 20px;
+   
+}
+
+button {
+    width: 7vw;
+    color: rgb(4, 85, 110);
+    background-color: rgb(252, 252, 252);
+    border-radius: 5px;
+    padding: 3px; 
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.card-2 {
+    width: 20vw;
+    height: 50vh;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(4, 85, 110);
+    color: white;   
+}
+
+.sanduiche, .waffle, .torrada{
+    width: 18vw;
+    height: 30vh;
+    margin-top: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width:800px) {
+   .logo {
+       width: 50%;
+   }
+   
+    .container-1 {
+        flex-direction: column;
+    }
+
+    .card-1, .card-2 {
+        width: 75%;
+      
+        margin-bottom: 20px;
+       
+    }
+
+    .panquecas, .croissant, .crepioca{
+        width: 90%;
+    }
+
+    button {
+       width: 50%; 
+    }
+    .container-2 {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .sanduiche, .wafe, .torrada {
+        width: 90%;
+    }
+}
